@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/ABB-BCI-PCP/IOM/_apis/test/Runs/{{Input1.text}}/results",
+      "path": "/ABB-BCI-PCP/IOM/_apis/test/Runs/{{Select1.selectedOptionValue}}/results",
       "headers": [
         {
           "key": "Authorization",
@@ -55,7 +55,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input1.text"
+      "Select1.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

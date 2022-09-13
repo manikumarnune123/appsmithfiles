@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/ABB-BCI-PCP/IOM/_apis/test/Plans/64403/suites/{{Select1.selectedOptionValue}}/testcases",
+      "path": "/ABB-BCI-PCP/IOM/_apis/test/Plans/64403/suites/{{testSuiteID.text}}/testcases",
       "headers": [
         {
           "key": "Authorization",
@@ -55,7 +55,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select1.selectedOptionValue"
+      "testSuiteID.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

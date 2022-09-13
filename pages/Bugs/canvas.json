@@ -406,7 +406,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Input1.text"
+                "Select1.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -418,7 +418,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Select1.selectedOptionValue"
+                "testSuiteID.text"
               ],
               "timeoutInMillisecond": 10000
             }
