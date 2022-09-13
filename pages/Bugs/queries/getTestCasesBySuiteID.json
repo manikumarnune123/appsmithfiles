@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getProjects",
+    "name": "getTestCasesBySuiteID",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/ABB-BCI-PCP/IOM/_apis/test/Plans/64403/suites/120777/testcases",
+      "path": "/ABB-BCI-PCP/IOM/_apis/test/Plans/64403/suites/{{Select1.selectedOptionValue}}/testcases",
       "headers": [
         {
           "key": "Authorization",
@@ -46,17 +46,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Select1.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Bugs_getProjects",
+  "id": "Bugs_getTestCasesBySuiteID",
   "deleted": false,
   "gitSyncId": "62517b636a70ad452dee151c_631b2808ac8fe70d3c3005d8"
 }
